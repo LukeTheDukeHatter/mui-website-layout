@@ -10,12 +10,11 @@ import {
 import './index.css';
 
 
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <Router>
   <Routes>
+    <Route path="/" element={<SignInSide />} />
     <Route path="/login" element={<SignInSide />} />
     <Route path="/signup" element={<SignUpSide />} />
     <Route path="*" element={<BlankPage />} />
